@@ -1,9 +1,6 @@
-version: '3.8'
-
 services:
   postgres:
     image: postgres:15
-    container_name: db_postgres
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: password
@@ -15,7 +12,6 @@ services:
 
   mariadb:
     image: mariadb:10.11
-    container_name: db_mariadb
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: spotify_db
@@ -28,7 +24,6 @@ services:
 
   mongodb:
     image: mongo:6.0
-    container_name: db_mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: password
@@ -39,7 +34,6 @@ services:
 
   cassandra:
     image: cassandra:4.1
-    container_name: db_cassandra
     environment:
       CASSANDRA_CLUSTER_NAME: "SpotifyCluster"
     ports:

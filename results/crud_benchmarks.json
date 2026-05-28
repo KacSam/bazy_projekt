@@ -1,0 +1,1874 @@
+[
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 8.036,
+    "throughput_rec_s": 185.538,
+    "samples_ms": [
+      16.011,
+      4.119,
+      3.978
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 2886.337,
+    "throughput_rec_s": 347.559,
+    "samples_ms": [
+      2978.44,
+      2662.338,
+      3018.233
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 3.454,
+    "throughput_rec_s": 291.84,
+    "samples_ms": [
+      3.033,
+      3.608,
+      3.722
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 2.317,
+    "throughput_rec_s": 460.351,
+    "samples_ms": [
+      3.206,
+      1.923,
+      1.821
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 27.065,
+    "throughput_rec_s": 37376.463,
+    "samples_ms": [
+      30.017,
+      23.256,
+      27.921
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 381.518,
+    "throughput_rec_s": 3.609,
+    "samples_ms": [
+      710.559,
+      248.945,
+      185.051
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 3.607,
+    "throughput_rec_s": 277.328,
+    "samples_ms": [
+      3.682,
+      3.576,
+      3.561
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 5.179,
+    "throughput_rec_s": 234.292,
+    "samples_ms": [
+      8.74,
+      3.374,
+      3.423
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 113.804,
+    "throughput_rec_s": 11932.613,
+    "samples_ms": [
+      211.025,
+      57.97,
+      72.417
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 2.965,
+    "throughput_rec_s": 339.306,
+    "samples_ms": [
+      2.839,
+      2.757,
+      3.3
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 184.005,
+    "throughput_rec_s": 16089.312,
+    "samples_ms": [
+      464.356,
+      39.341,
+      48.319
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 144.436,
+    "throughput_rec_s": 7599.704,
+    "samples_ms": [
+      209.211,
+      101.173,
+      122.923
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 3.625,
+    "throughput_rec_s": 277.223,
+    "samples_ms": [
+      3.562,
+      3.967,
+      3.347
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 2758.788,
+    "throughput_rec_s": 362.494,
+    "samples_ms": [
+      2761.472,
+      2735.45,
+      2779.441
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 6.21,
+    "throughput_rec_s": 180.135,
+    "samples_ms": [
+      8.508,
+      6.357,
+      3.766
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 4.41,
+    "throughput_rec_s": 434.123,
+    "samples_ms": [
+      9.892,
+      1.594,
+      1.742
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 19.716,
+    "throughput_rec_s": 51714.2,
+    "samples_ms": [
+      16.916,
+      18.647,
+      23.586
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 255.04,
+    "throughput_rec_s": 4.305,
+    "samples_ms": [
+      351.026,
+      165.38,
+      248.713
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 6.55,
+    "throughput_rec_s": 153.691,
+    "samples_ms": [
+      6.725,
+      7.085,
+      5.841
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 6.382,
+    "throughput_rec_s": 176.801,
+    "samples_ms": [
+      9.389,
+      3.993,
+      5.765
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 145.995,
+    "throughput_rec_s": 9541.365,
+    "samples_ms": [
+      257.299,
+      119.63,
+      61.056
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 2.882,
+    "throughput_rec_s": 352.057,
+    "samples_ms": [
+      2.711,
+      2.554,
+      3.381
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 272.208,
+    "throughput_rec_s": 10094.738,
+    "samples_ms": [
+      675.363,
+      79.819,
+      61.443
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 76.569,
+    "throughput_rec_s": 15840.571,
+    "samples_ms": [
+      93.652,
+      37.45,
+      98.606
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 3.742,
+    "throughput_rec_s": 270.049,
+    "samples_ms": [
+      4.295,
+      3.545,
+      3.387
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 2974.027,
+    "throughput_rec_s": 336.749,
+    "samples_ms": [
+      2872.94,
+      3137.351,
+      2911.79
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 3.094,
+    "throughput_rec_s": 323.341,
+    "samples_ms": [
+      3.166,
+      3.035,
+      3.081
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 1.609,
+    "throughput_rec_s": 646.565,
+    "samples_ms": [
+      2.028,
+      1.245,
+      1.554
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 9.279,
+    "throughput_rec_s": 109296.135,
+    "samples_ms": [
+      9.97,
+      10.076,
+      7.792
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 138.524,
+    "throughput_rec_s": 7.44,
+    "samples_ms": [
+      174.41,
+      121.303,
+      119.86
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 3.446,
+    "throughput_rec_s": 296.924,
+    "samples_ms": [
+      4.22,
+      3.024,
+      3.095
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 3.297,
+    "throughput_rec_s": 307.524,
+    "samples_ms": [
+      3.048,
+      2.979,
+      3.863
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 85.661,
+    "throughput_rec_s": 16809.211,
+    "samples_ms": [
+      166.957,
+      45.553,
+      44.473
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 2.773,
+    "throughput_rec_s": 370.554,
+    "samples_ms": [
+      2.612,
+      2.295,
+      3.412
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 91.881,
+    "throughput_rec_s": 13872.272,
+    "samples_ms": [
+      127.357,
+      107.39,
+      40.895
+    ]
+  },
+  {
+    "db": "postgres",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 97.425,
+    "throughput_rec_s": 14061.182,
+    "samples_ms": [
+      156.193,
+      39.294,
+      96.789
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 4.684,
+    "throughput_rec_s": 243.442,
+    "samples_ms": [
+      7.116,
+      3.984,
+      2.952
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 129.63,
+    "throughput_rec_s": 8846.542,
+    "samples_ms": [
+      202.608,
+      85.88,
+      100.404
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 3.117,
+    "throughput_rec_s": 322.051,
+    "samples_ms": [
+      3.069,
+      3.379,
+      2.904
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 3.732,
+    "throughput_rec_s": 447.223,
+    "samples_ms": [
+      7.894,
+      1.734,
+      1.567
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 66.034,
+    "throughput_rec_s": 18477.639,
+    "samples_ms": [
+      108.5,
+      53.071,
+      36.531
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 2549.497,
+    "throughput_rec_s": 0.397,
+    "samples_ms": [
+      2847.228,
+      2603.591,
+      2197.673
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 6.912,
+    "throughput_rec_s": 597.209,
+    "samples_ms": [
+      18.427,
+      1.208,
+      1.099
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 3.682,
+    "throughput_rec_s": 275.372,
+    "samples_ms": [
+      4.161,
+      3.133,
+      3.751
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 50.627,
+    "throughput_rec_s": 34116.79,
+    "samples_ms": [
+      108.818,
+      20.359,
+      22.705
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 3.12,
+    "throughput_rec_s": 322.083,
+    "samples_ms": [
+      2.906,
+      3.423,
+      3.03
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 15.245,
+    "throughput_rec_s": 67289.609,
+    "samples_ms": [
+      18.838,
+      13.152,
+      13.746
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 56.984,
+    "throughput_rec_s": 39585.746,
+    "samples_ms": [
+      134.912,
+      16.996,
+      19.045
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 8.056,
+    "throughput_rec_s": 190.914,
+    "samples_ms": [
+      16.275,
+      4.318,
+      3.575
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 92.608,
+    "throughput_rec_s": 12476.559,
+    "samples_ms": [
+      124.68,
+      50.962,
+      102.181
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 3.615,
+    "throughput_rec_s": 283.275,
+    "samples_ms": [
+      2.889,
+      3.809,
+      4.146
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 1.833,
+    "throughput_rec_s": 548.334,
+    "samples_ms": [
+      1.882,
+      1.659,
+      1.958
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 72.919,
+    "throughput_rec_s": 16328.123,
+    "samples_ms": [
+      97.897,
+      37.313,
+      83.547
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 2585.715,
+    "throughput_rec_s": 0.388,
+    "samples_ms": [
+      2431.377,
+      2833.149,
+      2492.618
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 4.361,
+    "throughput_rec_s": 500.193,
+    "samples_ms": [
+      10.231,
+      1.398,
+      1.455
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 4.092,
+    "throughput_rec_s": 250.261,
+    "samples_ms": [
+      5.018,
+      3.524,
+      3.735
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 45.6,
+    "throughput_rec_s": 35653.024,
+    "samples_ms": [
+      95.321,
+      21.122,
+      20.356
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 3.5,
+    "throughput_rec_s": 288.774,
+    "samples_ms": [
+      3.608,
+      3.865,
+      3.026
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 25.526,
+    "throughput_rec_s": 41340.607,
+    "samples_ms": [
+      18.268,
+      26.259,
+      32.052
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 56.328,
+    "throughput_rec_s": 43621.964,
+    "samples_ms": [
+      136.545,
+      15.516,
+      16.922
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 9.025,
+    "throughput_rec_s": 146.035,
+    "samples_ms": [
+      16.459,
+      5.108,
+      5.508
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 95.981,
+    "throughput_rec_s": 12521.16,
+    "samples_ms": [
+      138.647,
+      49.087,
+      100.209
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 2.952,
+    "throughput_rec_s": 339.062,
+    "samples_ms": [
+      2.991,
+      3.04,
+      2.826
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 1.523,
+    "throughput_rec_s": 657.543,
+    "samples_ms": [
+      1.499,
+      1.466,
+      1.605
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 50.117,
+    "throughput_rec_s": 22557.536,
+    "samples_ms": [
+      77.167,
+      37.781,
+      35.404
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 2473.596,
+    "throughput_rec_s": 0.405,
+    "samples_ms": [
+      2556.923,
+      2401.413,
+      2462.453
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 5.287,
+    "throughput_rec_s": 520.097,
+    "samples_ms": [
+      13.167,
+      1.356,
+      1.339
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 3.67,
+    "throughput_rec_s": 277.85,
+    "samples_ms": [
+      4.431,
+      3.298,
+      3.282
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 40.292,
+    "throughput_rec_s": 45173.079,
+    "samples_ms": [
+      88.359,
+      14.668,
+      17.849
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 3.143,
+    "throughput_rec_s": 319.384,
+    "samples_ms": [
+      3.055,
+      2.955,
+      3.42
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 17.263,
+    "throughput_rec_s": 60425.742,
+    "samples_ms": [
+      18.456,
+      20.603,
+      12.73
+    ]
+  },
+  {
+    "db": "mariadb",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 46.325,
+    "throughput_rec_s": 49774.571,
+    "samples_ms": [
+      110.365,
+      13.488,
+      15.123
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 6.038,
+    "throughput_rec_s": 222.816,
+    "samples_ms": [
+      6.746,
+      8.918,
+      2.451
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 68.742,
+    "throughput_rec_s": 18536.803,
+    "samples_ms": [
+      120.859,
+      38.388,
+      46.978
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 2.51,
+    "throughput_rec_s": 402.963,
+    "samples_ms": [
+      2.225,
+      2.432,
+      2.872
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 3.975,
+    "throughput_rec_s": 303.386,
+    "samples_ms": [
+      6.461,
+      3.211,
+      2.252
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 90.324,
+    "throughput_rec_s": 51038.417,
+    "samples_ms": [
+      243.127,
+      16.562,
+      11.284
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 3178.233,
+    "throughput_rec_s": 0.38,
+    "samples_ms": [
+      5330.433,
+      2052.764,
+      2151.502
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 3.863,
+    "throughput_rec_s": 313.498,
+    "samples_ms": [
+      6.472,
+      2.37,
+      2.747
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 2.716,
+    "throughput_rec_s": 381.365,
+    "samples_ms": [
+      3.469,
+      2.265,
+      2.414
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 42.917,
+    "throughput_rec_s": 23785.469,
+    "samples_ms": [
+      52.024,
+      38.566,
+      38.161
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 2.197,
+    "throughput_rec_s": 457.595,
+    "samples_ms": [
+      2.153,
+      2.412,
+      2.025
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 159.091,
+    "throughput_rec_s": 6320.916,
+    "samples_ms": [
+      145.946,
+      174.973,
+      156.355
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 45.431,
+    "throughput_rec_s": 22029.593,
+    "samples_ms": [
+      46.638,
+      46.032,
+      43.624
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 3.664,
+    "throughput_rec_s": 313.823,
+    "samples_ms": [
+      2.715,
+      5.777,
+      2.5
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 39.488,
+    "throughput_rec_s": 25381.409,
+    "samples_ms": [
+      41.386,
+      36.974,
+      40.103
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 2.912,
+    "throughput_rec_s": 343.886,
+    "samples_ms": [
+      2.838,
+      2.836,
+      3.062
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 3.187,
+    "throughput_rec_s": 317.381,
+    "samples_ms": [
+      3.021,
+      2.864,
+      3.678
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 57.193,
+    "throughput_rec_s": 51632.891,
+    "samples_ms": [
+      143.994,
+      11.844,
+      15.742
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 2533.917,
+    "throughput_rec_s": 0.395,
+    "samples_ms": [
+      2652.908,
+      2482.114,
+      2466.729
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 3.138,
+    "throughput_rec_s": 325.453,
+    "samples_ms": [
+      3.011,
+      2.644,
+      3.76
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 3.28,
+    "throughput_rec_s": 309.304,
+    "samples_ms": [
+      3.678,
+      3.395,
+      2.766
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 71.029,
+    "throughput_rec_s": 14249.473,
+    "samples_ms": [
+      74.515,
+      77.989,
+      60.584
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 2.604,
+    "throughput_rec_s": 389.18,
+    "samples_ms": [
+      2.602,
+      2.972,
+      2.238
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 187.905,
+    "throughput_rec_s": 5336.118,
+    "samples_ms": [
+      196.63,
+      192.501,
+      174.584
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 56.065,
+    "throughput_rec_s": 18462.556,
+    "samples_ms": [
+      46.623,
+      50.162,
+      71.411
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 2.788,
+    "throughput_rec_s": 359.786,
+    "samples_ms": [
+      2.698,
+      2.654,
+      3.013
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 42.927,
+    "throughput_rec_s": 23564.718,
+    "samples_ms": [
+      43.664,
+      48.054,
+      37.062
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 2.906,
+    "throughput_rec_s": 345.844,
+    "samples_ms": [
+      3.199,
+      2.705,
+      2.815
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 2.838,
+    "throughput_rec_s": 356.051,
+    "samples_ms": [
+      3.247,
+      2.563,
+      2.703
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 16.963,
+    "throughput_rec_s": 58961.772,
+    "samples_ms": [
+      17.05,
+      17.168,
+      16.67
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 2740.554,
+    "throughput_rec_s": 0.368,
+    "samples_ms": [
+      3079.911,
+      2658.914,
+      2482.838
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 2.946,
+    "throughput_rec_s": 340.964,
+    "samples_ms": [
+      3.107,
+      2.681,
+      3.049
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 3.004,
+    "throughput_rec_s": 337.05,
+    "samples_ms": [
+      3.325,
+      3.126,
+      2.561
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 55.54,
+    "throughput_rec_s": 18152.358,
+    "samples_ms": [
+      48.697,
+      58.598,
+      59.325
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 2.703,
+    "throughput_rec_s": 376.387,
+    "samples_ms": [
+      2.395,
+      2.493,
+      3.221
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 177.142,
+    "throughput_rec_s": 5663.756,
+    "samples_ms": [
+      183.216,
+      185.089,
+      163.121
+    ]
+  },
+  {
+    "db": "mongodb",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 75.164,
+    "throughput_rec_s": 13919.326,
+    "samples_ms": [
+      66.671,
+      60.155,
+      98.668
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 8.518,
+    "throughput_rec_s": 119.342,
+    "samples_ms": [
+      9.942,
+      8.347,
+      7.265
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 8137.062,
+    "throughput_rec_s": 122.992,
+    "samples_ms": [
+      8455.61,
+      7913.175,
+      8042.401
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 10.345,
+    "throughput_rec_s": 103.677,
+    "samples_ms": [
+      7.656,
+      14.348,
+      9.032
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 11.851,
+    "throughput_rec_s": 95.516,
+    "samples_ms": [
+      16.677,
+      7.037,
+      11.838
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 121.461,
+    "throughput_rec_s": 12957.743,
+    "samples_ms": [
+      125.458,
+      38.594,
+      200.33
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 874.239,
+    "throughput_rec_s": 1.183,
+    "samples_ms": [
+      1113.616,
+      765.012,
+      744.091
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 6.033,
+    "throughput_rec_s": 178.483,
+    "samples_ms": [
+      4.068,
+      7.897,
+      6.135
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 4.598,
+    "throughput_rec_s": 220.121,
+    "samples_ms": [
+      4.768,
+      3.932,
+      5.095
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 3607.3,
+    "throughput_rec_s": 277.44,
+    "samples_ms": [
+      3492.033,
+      3741.856,
+      3588.011
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 3.594,
+    "throughput_rec_s": 278.538,
+    "samples_ms": [
+      3.456,
+      3.728,
+      3.597
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 8544.291,
+    "throughput_rec_s": 119.775,
+    "samples_ms": [
+      10452.961,
+      7407.385,
+      7772.529
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 10000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 3739.669,
+    "throughput_rec_s": 268.608,
+    "samples_ms": [
+      4037.759,
+      3754.047,
+      3427.201
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 12.961,
+    "throughput_rec_s": 93.077,
+    "samples_ms": [
+      10.126,
+      21.265,
+      7.493
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 7702.2,
+    "throughput_rec_s": 130.96,
+    "samples_ms": [
+      6949.615,
+      7468.915,
+      8688.07
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 7.903,
+    "throughput_rec_s": 130.399,
+    "samples_ms": [
+      6.489,
+      7.385,
+      9.836
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 5.889,
+    "throughput_rec_s": 187.699,
+    "samples_ms": [
+      8.732,
+      4.266,
+      4.669
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 16.375,
+    "throughput_rec_s": 61361.766,
+    "samples_ms": [
+      17.604,
+      16.625,
+      14.896
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 918.768,
+    "throughput_rec_s": 1.094,
+    "samples_ms": [
+      973.821,
+      956.706,
+      825.778
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 4.291,
+    "throughput_rec_s": 234.618,
+    "samples_ms": [
+      3.892,
+      4.228,
+      4.754
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 3.925,
+    "throughput_rec_s": 259.004,
+    "samples_ms": [
+      3.58,
+      3.528,
+      4.667
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 3887.778,
+    "throughput_rec_s": 257.897,
+    "samples_ms": [
+      3610.899,
+      4043.425,
+      4009.01
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 3.583,
+    "throughput_rec_s": 279.403,
+    "samples_ms": [
+      3.651,
+      3.41,
+      3.69
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 7297.961,
+    "throughput_rec_s": 137.682,
+    "samples_ms": [
+      6931.021,
+      8028.551,
+      6934.311
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 100000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 3944.024,
+    "throughput_rec_s": 253.898,
+    "samples_ms": [
+      3928.939,
+      3772.222,
+      4130.91
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_single",
+    "avg_ms": 8.441,
+    "throughput_rec_s": 122.514,
+    "samples_ms": [
+      10.494,
+      8.122,
+      6.706
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_batch",
+    "avg_ms": 7623.473,
+    "throughput_rec_s": 131.33,
+    "samples_ms": [
+      7818.73,
+      7255.875,
+      7795.815
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "CREATE",
+    "scenario": "insert_validated",
+    "avg_ms": 6.922,
+    "throughput_rec_s": 144.929,
+    "samples_ms": [
+      6.386,
+      7.142,
+      7.237
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "by_id",
+    "avg_ms": 8.938,
+    "throughput_rec_s": 154.814,
+    "samples_ms": [
+      16.932,
+      4.741,
+      5.142
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "filter_popularity",
+    "avg_ms": 15.538,
+    "throughput_rec_s": 65584.671,
+    "samples_ms": [
+      18.435,
+      13.201,
+      14.979
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "READ",
+    "scenario": "aggregate",
+    "avg_ms": 970.237,
+    "throughput_rec_s": 1.066,
+    "samples_ms": [
+      1230.755,
+      871.803,
+      808.153
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "single_field",
+    "avg_ms": 3.942,
+    "throughput_rec_s": 255.306,
+    "samples_ms": [
+      3.777,
+      3.657,
+      4.391
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "multi_field",
+    "avg_ms": 3.756,
+    "throughput_rec_s": 269.811,
+    "samples_ms": [
+      4.386,
+      3.363,
+      3.52
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "UPDATE",
+    "scenario": "batch",
+    "avg_ms": 3677.507,
+    "throughput_rec_s": 274.219,
+    "samples_ms": [
+      3586.396,
+      3311.898,
+      4134.226
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_id",
+    "avg_ms": 4.042,
+    "throughput_rec_s": 250.805,
+    "samples_ms": [
+      3.504,
+      3.958,
+      4.664
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "by_condition",
+    "avg_ms": 7041.362,
+    "throughput_rec_s": 142.208,
+    "samples_ms": [
+      6703.771,
+      7096.944,
+      7323.373
+    ]
+  },
+  {
+    "db": "cassandra",
+    "size": 1000000,
+    "operation": "DELETE",
+    "scenario": "soft_delete",
+    "avg_ms": 3489.357,
+    "throughput_rec_s": 286.605,
+    "samples_ms": [
+      3469.988,
+      3468.585,
+      3529.5
+    ]
+  }
+]

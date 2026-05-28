@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="500.0" y="34" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700">Srednia przepustowosc wedlug operacji CRUD</text>
+<line x1="90" y1="490.0" x2="960" y2="490.0" stroke="#e5e7eb"/>
+<text x="80" y="494.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">0.0</text>
+<line x1="90" y1="406.0" x2="960" y2="406.0" stroke="#e5e7eb"/>
+<text x="80" y="410.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">6732.6</text>
+<line x1="90" y1="322.0" x2="960" y2="322.0" stroke="#e5e7eb"/>
+<text x="80" y="326.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">13465.3</text>
+<line x1="90" y1="238.0" x2="960" y2="238.0" stroke="#e5e7eb"/>
+<text x="80" y="242.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">20197.9</text>
+<line x1="90" y1="154.0" x2="960" y2="154.0" stroke="#e5e7eb"/>
+<text x="80" y="158.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">26930.5</text>
+<line x1="90" y1="70.0" x2="960" y2="70.0" stroke="#e5e7eb"/>
+<text x="80" y="74.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">33663.2</text>
+<text x="198.8" y="538" text-anchor="middle" font-family="Arial" font-size="13" fill="#111827">CREATE</text>
+<rect x="111.8" y="488.5" width="35.7" height="1.5" fill="#3366cc"/>
+<rect x="155.2" y="441.0" width="35.7" height="49.0" fill="#dc3912"/>
+<rect x="198.8" y="393.7" width="35.7" height="96.3" fill="#109618"/>
+<rect x="242.2" y="486.4" width="35.7" height="3.6" fill="#ff9900"/>
+<text x="416.2" y="538" text-anchor="middle" font-family="Arial" font-size="13" fill="#111827">DELETE</text>
+<rect x="329.2" y="487.2" width="35.7" height="2.8" fill="#3366cc"/>
+<rect x="372.8" y="70.0" width="35.7" height="420.0" fill="#dc3912"/>
+<rect x="416.2" y="388.9" width="35.7" height="101.1" fill="#109618"/>
+<rect x="459.8" y="381.0" width="35.7" height="109.0" fill="#ff9900"/>
+<text x="633.8" y="538" text-anchor="middle" font-family="Arial" font-size="13" fill="#111827">READ</text>
+<rect x="546.8" y="295.4" width="35.7" height="194.6" fill="#3366cc"/>
+<rect x="590.2" y="408.2" width="35.7" height="81.8" fill="#dc3912"/>
+<rect x="633.8" y="264.6" width="35.7" height="225.4" fill="#109618"/>
+<rect x="677.2" y="212.8" width="35.7" height="277.2" fill="#ff9900"/>
+<text x="851.2" y="538" text-anchor="middle" font-family="Arial" font-size="13" fill="#111827">UPDATE</text>
+<rect x="764.2" y="486.9" width="35.7" height="3.1" fill="#3366cc"/>
+<rect x="807.8" y="327.3" width="35.7" height="162.7" fill="#dc3912"/>
+<rect x="851.2" y="409.3" width="35.7" height="80.7" fill="#109618"/>
+<rect x="894.8" y="434.9" width="35.7" height="55.1" fill="#ff9900"/>
+<rect x="90" y="576" width="14" height="14" fill="#3366cc"/>
+<text x="110" y="588" font-family="Arial" font-size="13" fill="#111827">cassandra</text>
+<rect x="240" y="576" width="14" height="14" fill="#dc3912"/>
+<text x="260" y="588" font-family="Arial" font-size="13" fill="#111827">mariadb</text>
+<rect x="390" y="576" width="14" height="14" fill="#109618"/>
+<text x="410" y="588" font-family="Arial" font-size="13" fill="#111827">mongodb</text>
+<rect x="540" y="576" width="14" height="14" fill="#ff9900"/>
+<text x="560" y="588" font-family="Arial" font-size="13" fill="#111827">postgres</text>
+<text x="525.0" y="604" text-anchor="middle" font-family="Arial" font-size="13" fill="#374151">operation</text>
+<text x="22" y="280.0" transform="rotate(-90 22 280.0)" text-anchor="middle" font-family="Arial" font-size="13" fill="#374151">throughput_rec_s</text>
+</svg>

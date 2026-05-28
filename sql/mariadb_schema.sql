@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS albums (
     album_name VARCHAR(255) NOT NULL,
     release_date DATE,
     total_tracks INT,
-    album_type VARCHAR(100)
+    album_type VARCHAR(100),
+    UNIQUE KEY uq_albums_album_name (album_name)
 );
 
 CREATE TABLE IF NOT EXISTS tracks (
@@ -69,11 +70,11 @@ CREATE TABLE IF NOT EXISTS track_genres (
     CONSTRAINT fk_track_genres_genre FOREIGN KEY (genre_id) REFERENCES genres(genre_id) ON DELETE CASCADE
 );
 
-CREATE INDEX idx_tracks_popularity ON tracks(popularity);
-CREATE INDEX idx_tracks_track_name ON tracks(track_name);
-CREATE INDEX idx_artists_artist_name ON artists(artist_name);
-CREATE INDEX idx_albums_release_date ON albums(release_date);
-CREATE INDEX idx_track_audio_features_tempo ON track_audio_features(tempo);
-CREATE INDEX idx_track_artists_artist_id ON track_artists(artist_id);
-CREATE INDEX idx_album_artists_artist_id ON album_artists(artist_id);
-CREATE INDEX idx_track_genres_genre_id ON track_genres(genre_id);
+CREATE INDEX IF NOT EXISTS idx_tracks_popularity ON tracks(popularity);
+CREATE INDEX IF NOT EXISTS idx_tracks_track_name ON tracks(track_name);
+CREATE INDEX IF NOT EXISTS idx_artists_artist_name ON artists(artist_name);
+CREATE INDEX IF NOT EXISTS idx_albums_release_date ON albums(release_date);
+CREATE INDEX IF NOT EXISTS idx_track_audio_features_tempo ON track_audio_features(tempo);
+CREATE INDEX IF NOT EXISTS idx_track_artists_artist_id ON track_artists(artist_id);
+CREATE INDEX IF NOT EXISTS idx_album_artists_artist_id ON album_artists(artist_id);
+CREATE INDEX IF NOT EXISTS idx_track_genres_genre_id ON track_genres(genre_id);

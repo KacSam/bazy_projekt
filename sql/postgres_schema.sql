@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS albums (
     album_name TEXT NOT NULL,
     release_date DATE,
     total_tracks INT,
-    album_type TEXT
+    album_type TEXT,
+    CONSTRAINT uq_albums_album_name UNIQUE (album_name)
 );
 
 CREATE TABLE IF NOT EXISTS tracks (

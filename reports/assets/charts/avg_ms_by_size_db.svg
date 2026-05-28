@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="500.0" y="34" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700">Sredni czas testow wedlug rozmiaru zbioru</text>
+<line x1="90" y1="490.0" x2="960" y2="490.0" stroke="#e5e7eb"/>
+<text x="80" y="494.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">0.0</text>
+<line x1="90" y1="406.0" x2="960" y2="406.0" stroke="#e5e7eb"/>
+<text x="80" y="410.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">417.8</text>
+<line x1="90" y1="322.0" x2="960" y2="322.0" stroke="#e5e7eb"/>
+<text x="80" y="326.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">835.6</text>
+<line x1="90" y1="238.0" x2="960" y2="238.0" stroke="#e5e7eb"/>
+<text x="80" y="242.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">1253.4</text>
+<line x1="90" y1="154.0" x2="960" y2="154.0" stroke="#e5e7eb"/>
+<text x="80" y="158.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">1671.3</text>
+<line x1="90" y1="70.0" x2="960" y2="70.0" stroke="#e5e7eb"/>
+<text x="80" y="74.0" text-anchor="end" font-family="Arial" font-size="12" fill="#374151">2089.1</text>
+<text x="235.0" y="538" text-anchor="middle" font-family="Arial" font-size="13" fill="#111827">10000</text>
+<rect x="119.0" y="70.0" width="47.6" height="420.0" fill="#3366cc"/>
+<rect x="177.0" y="441.5" width="47.6" height="48.5" fill="#dc3912"/>
+<rect x="235.0" y="429.6" width="47.6" height="60.4" fill="#109618"/>
+<rect x="293.0" y="427.0" width="47.6" height="63.0" fill="#ff9900"/>
+<text x="525.0" y="538" text-anchor="middle" font-family="Arial" font-size="13" fill="#111827">100000</text>
+<rect x="409.0" y="91.2" width="47.6" height="398.8" fill="#3366cc"/>
+<rect x="467.0" y="441.3" width="47.6" height="48.7" fill="#dc3912"/>
+<rect x="525.0" y="440.3" width="47.6" height="49.7" fill="#109618"/>
+<rect x="583.0" y="430.4" width="47.6" height="59.6" fill="#ff9900"/>
+<text x="815.0" y="538" text-anchor="middle" font-family="Arial" font-size="13" fill="#111827">1000000</text>
+<rect x="699.0" y="107.1" width="47.6" height="382.9" fill="#3366cc"/>
+<rect x="757.0" y="443.9" width="47.6" height="46.1" fill="#dc3912"/>
+<rect x="815.0" y="437.6" width="47.6" height="52.4" fill="#109618"/>
+<rect x="873.0" y="432.8" width="47.6" height="57.2" fill="#ff9900"/>
+<rect x="90" y="576" width="14" height="14" fill="#3366cc"/>
+<text x="110" y="588" font-family="Arial" font-size="13" fill="#111827">cassandra</text>
+<rect x="240" y="576" width="14" height="14" fill="#dc3912"/>
+<text x="260" y="588" font-family="Arial" font-size="13" fill="#111827">mariadb</text>
+<rect x="390" y="576" width="14" height="14" fill="#109618"/>
+<text x="410" y="588" font-family="Arial" font-size="13" fill="#111827">mongodb</text>
+<rect x="540" y="576" width="14" height="14" fill="#ff9900"/>
+<text x="560" y="588" font-family="Arial" font-size="13" fill="#111827">postgres</text>
+<text x="525.0" y="604" text-anchor="middle" font-family="Arial" font-size="13" fill="#374151">size</text>
+<text x="22" y="280.0" transform="rotate(-90 22 280.0)" text-anchor="middle" font-family="Arial" font-size="13" fill="#374151">avg_ms</text>
+</svg>

@@ -21,6 +21,7 @@ import pymysql
 class Config:
     kaggle_dataset: str = "rodolfofigueroa/spotify-12m-songs"
     row_limit: int = 50000
+    csv_path: str | None = None
 
 
 def pick_column(df: pd.DataFrame, candidates: list[str]) -> str | None:
@@ -121,8 +122,9 @@ def discover_csv(dataset_id: str) -> str:
     return csv_files[0]
 
 
-def load_dataframe(dataset_id: str, row_limit: int) -> pd.DataFrame:
-    csv_path = discover_csv(dataset_id)
+def load_dataframe(dataset_id: str, row_limit: int, csv_path: str | None = None) -> pd.DataFrame:
+    if csv_path is None:
+        csv_path = discover_csv(dataset_id)
     print(f"[INFO] CSV source: {csv_path}")
     df = pd.read_csv(csv_path, nrows=row_limit)
     if df.empty:
@@ -246,7 +248,7 @@ def load_postgres(records: list[dict[str, Any]], root_dir: str) -> None:
     print("[INFO] Loading PostgreSQL...")
     conn = psycopg2.connect(
         host=os.getenv("POSTGRES_HOST", "localhost"),
-        port=int(os.getenv("POSTGRES_PORT", "5432")),
+        port=int(os.getenv("POSTGRES_PORT", "55432")),
         user=os.getenv("POSTGRES_USER", "admin"),
         password=os.getenv("POSTGRES_PASSWORD", "password"),
         dbname=os.getenv("POSTGRES_DB", "spotify_db"),
@@ -265,25 +267,28 @@ def load_postgres(records: list[dict[str, Any]], root_dir: str) -> None:
         genre_map: dict[str, int] = {}
 
         for rec in records:
-            cur.execute(
-                """
-                INSERT INTO albums (album_name, release_date, total_tracks, album_type)
-                VALUES (%s, %s, %s, %s)
-                ON CONFLICT DO NOTHING
-                RETURNING album_id
-                """,
-                (rec["album_name"], rec["release_date"], None, None),
-            )
-            row = cur.fetchone()
-            if row:
-                album_id = row[0]
-                album_map[rec["album_name"]] = album_id
-            elif rec["album_name"] not in album_map:
-                cur.execute("SELECT album_id FROM albums WHERE album_name = %s LIMIT 1", (rec["album_name"],))
-                album_map[rec["album_name"]] = cur.fetchone()[0]
+            if rec["album_name"] not in album_map:
+                cur.execute(
+                    """
+                    INSERT INTO albums (album_name, release_date, total_tracks, album_type)
+                    VALUES (%s, %s, %s, %s)
+                    ON CONFLICT DO NOTHING
+                    RETURNING album_id
+                    """,
+                    (rec["album_name"], rec["release_date"], None, None),
+                )
+                row = cur.fetchone()
+                if row:
+                    album_id = row[0]
+                    album_map[rec["album_name"]] = album_id
+                else:
+                    cur.execute("SELECT album_id FROM albums WHERE album_name = %s LIMIT 1", (rec["album_name"],))
+                    album_map[rec["album_name"]] = cur.fetchone()[0]
 
             for ap in rec["artists"]:
                 key = (ap["artist_name"], ap["spotify_artist_id"])
+                if key in artist_map:
+                    continue
                 cur.execute(
                     """
                     INSERT INTO artists (artist_name, spotify_artist_id)
@@ -296,7 +301,7 @@ def load_postgres(records: list[dict[str, Any]], root_dir: str) -> None:
                 arow = cur.fetchone()
                 if arow:
                     artist_map[key] = arow[0]
-                elif key not in artist_map:
+                else:
                     if key[1] is not None:
                         cur.execute(
                             "SELECT artist_id FROM artists WHERE spotify_artist_id = %s LIMIT 1",
@@ -437,16 +442,19 @@ def load_mariadb(records: list[dict[str, Any]], root_dir: str) -> None:
         genre_map: dict[str, int] = {}
 
         for rec in records:
-            cur.execute(
-                "INSERT IGNORE INTO albums (album_name, release_date, total_tracks, album_type) VALUES (%s, %s, %s, %s)",
-                (rec["album_name"], rec["release_date"], None, None),
-            )
-            cur.execute("SELECT album_id FROM albums WHERE album_name = %s LIMIT 1", (rec["album_name"],))
-            album_id = cur.fetchone()[0]
-            album_map[rec["album_name"]] = album_id
+            if rec["album_name"] not in album_map:
+                cur.execute(
+                    "INSERT IGNORE INTO albums (album_name, release_date, total_tracks, album_type) VALUES (%s, %s, %s, %s)",
+                    (rec["album_name"], rec["release_date"], None, None),
+                )
+                cur.execute("SELECT album_id FROM albums WHERE album_name = %s LIMIT 1", (rec["album_name"],))
+                album_id = cur.fetchone()[0]
+                album_map[rec["album_name"]] = album_id
 
             for ap in rec["artists"]:
                 key = (ap["artist_name"], ap["spotify_artist_id"])
+                if key in artist_map:
+                    continue
                 cur.execute(
                     "INSERT IGNORE INTO artists (artist_name, spotify_artist_id) VALUES (%s, %s)",
                     key,
@@ -461,9 +469,10 @@ def load_mariadb(records: list[dict[str, Any]], root_dir: str) -> None:
                 artist_map[key] = cur.fetchone()[0]
 
             for g in rec["genres"]:
-                cur.execute("INSERT IGNORE INTO genres (genre_name) VALUES (%s)", (g,))
-                cur.execute("SELECT genre_id FROM genres WHERE genre_name = %s LIMIT 1", (g,))
-                genre_map[g] = cur.fetchone()[0]
+                if g not in genre_map:
+                    cur.execute("INSERT IGNORE INTO genres (genre_name) VALUES (%s)", (g,))
+                    cur.execute("SELECT genre_id FROM genres WHERE genre_name = %s LIMIT 1", (g,))
+                    genre_map[g] = cur.fetchone()[0]
 
         track_map: dict[str, int] = {}
         for rec in records:
@@ -705,6 +714,7 @@ def load_cassandra(records: list[dict[str, Any]], root_dir: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Load Spotify Kaggle data to PostgreSQL, MariaDB, MongoDB and Cassandra")
     parser.add_argument("--rows", type=int, default=int(os.getenv("SPOTIFY_LOAD_LIMIT", "50000")))
+    parser.add_argument("--csv", default=os.getenv("SPOTIFY_CSV_PATH"), help="Optional local CSV path; skips Kaggle download")
     parser.add_argument("--skip-postgres", action="store_true")
     parser.add_argument("--skip-mariadb", action="store_true")
     parser.add_argument("--skip-mongodb", action="store_true")
@@ -712,9 +722,9 @@ def main() -> None:
     args = parser.parse_args()
 
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    cfg = Config(row_limit=args.rows)
+    cfg = Config(row_limit=args.rows, csv_path=args.csv)
 
-    df = load_dataframe(cfg.kaggle_dataset, cfg.row_limit)
+    df = load_dataframe(cfg.kaggle_dataset, cfg.row_limit, cfg.csv_path)
     records = normalize_records(df)
 
     if not args.skip_postgres:

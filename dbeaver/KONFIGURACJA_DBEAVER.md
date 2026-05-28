@@ -14,7 +14,7 @@ Upewnij sie, ze kontenery dzialaja:
 - docker compose ps
 
 Aktualne porty z docker compose:
-- PostgreSQL: localhost:5432
+- PostgreSQL: localhost:55432
 - MariaDB: localhost:3306
 - MongoDB: localhost:27017
 - Cassandra: localhost:9042
@@ -24,13 +24,13 @@ Aktualne porty z docker compose:
 ### New Connection
 - Database type: PostgreSQL
 - Host: localhost
-- Port: 5432
+- Port: 55432
 - Database: spotify_db
 - Username: admin
 - Password: password
 
 ### JDBC URL (opcjonalnie)
-- jdbc:postgresql://localhost:5432/spotify_db
+- jdbc:postgresql://localhost:55432/spotify_db
 
 ### Test
 - Kliknij Test Connection

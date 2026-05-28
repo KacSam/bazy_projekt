@@ -1,0 +1,13 @@
+db,size,operation,scenario,avg_ms,throughput_rec_s,samples_ms
+cassandra,1000000,CREATE,insert_single,11.511,95.972,"[17.09, 8.882, 8.561]"
+cassandra,1000000,CREATE,insert_batch,8306.619,123.11,"[10035.105, 7883.385, 7001.366]"
+cassandra,1000000,CREATE,insert_validated,11.774,94.781,"[8.679, 8.857, 17.787]"
+cassandra,1000000,READ,by_id,17.055,116.989,"[38.715, 6.901, 5.548]"
+cassandra,1000000,READ,filter_popularity,38.131,30763.016,"[61.533, 28.26, 24.599]"
+cassandra,1000000,READ,aggregate,1138.963,0.906,"[1433.13, 1041.282, 942.478]"
+cassandra,1000000,UPDATE,single_field,4.449,225.079,"[4.349, 4.677, 4.32]"
+cassandra,1000000,UPDATE,multi_field,4.222,237.177,"[4.012, 4.298, 4.355]"
+cassandra,1000000,UPDATE,batch,3956.229,253.732,"[4127.037, 3618.431, 4123.218]"
+cassandra,1000000,DELETE,by_id,3.906,258.084,"[3.848, 3.505, 4.366]"
+cassandra,1000000,DELETE,by_condition,7332.433,136.581,"[7456.261, 6947.303, 7593.734]"
+cassandra,1000000,DELETE,soft_delete,3708.828,270.336,"[3535.315, 3613.27, 3977.898]"

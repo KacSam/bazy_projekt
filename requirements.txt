@@ -5,3 +5,4 @@ PyMySQL
 pymongo
 cassandra-driver
 twisted
+gevent
